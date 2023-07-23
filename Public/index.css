@@ -1,0 +1,84 @@
+.sticky-note-container{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(72, 71, 73);
+    border-width: 3px;
+    box-shadow: 10px 5px 5px;
+    background-color: lightyellow;
+    font-family: 'Mynerve', cursive;
+    height: 75vh;
+    width: 25vw;
+    align-items: center;
+}
+
+/* main{
+    background-image: url('https://img.freepik.com/free-vector/blank-white-notepaper-design-vector_53876-161340.jpg?w=1380&t=st=1689353363~exp=1689353963~hmac=97821a283c222485ea2c8dd7b7e009f93f15e7118a96df643a7699da097c4ea4');
+    background-size: cover;
+} */
+
+.clear-list-btn{
+    margin-top: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(92, 92, 92);
+    color: rgb(92, 92, 92)
+}
+
+.task-list-container{
+    display: flex;
+    flex-direction: column;
+}
+.fa-trash-can{
+    margin-right: 5px;
+    cursor: pointer;
+}
+input {
+    margin-bottom: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+li {
+    font-size: 25px;
+    list-style: none; 
+    color: grey;
+    cursor: pointer;
+}
+
+
+h1 {
+    color: grey;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    
+}
+button{
+    background-color: transparent;
+    border: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-and-list-container{
+    display: flex;
+    align-items: center;
+}
+
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/blank-white-notepaper-design-vector_53876-161340.jpg?w=1380&t=st=1689353363~exp=1689353963~hmac=97821a283c222485ea2c8dd7b7e009f93f15e7118a96df643a7699da097c4ea4');
+    background-size: cover;
+}
+
+
+ main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
