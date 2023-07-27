@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const path = require('path')
 const {SERVER_PORT} = process.env
 
 const { seed, getList, addTask, deleteTask, isCompleteToggle } = require('./controller.js')
@@ -23,7 +24,7 @@ app.get('/css',(req,res) => {
     res.sendFile(path.join(__dirname,'../public/index.css'))
 })
 
-app.post('/list', seed)
+app.post('/seed', seed)
 
 app.get('/list', getList)
 app.post('/list',addTask)
