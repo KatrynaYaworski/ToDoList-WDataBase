@@ -9,7 +9,21 @@ const { seed, getList, addTask, deleteTask, isCompleteToggle } = require('./cont
 app.use(express.json())
 app.use(cors())
 
-app.post('/seed', seed)
+app.use(express.static(`public`))
+
+app.get('/',(req,res) => {
+    res.sendFile(path.join(__dirname,'../public/index.html'))
+})
+
+app.get('/js',(req,res) => {
+    res.sendFile(path.join(__dirname,'../public/toDoList.js'))
+})
+
+app.get('/css',(req,res) => {
+    res.sendFile(path.join(__dirname,'../public/index.css'))
+})
+
+app.post('/list', seed)
 
 app.get('/list', getList)
 app.post('/list',addTask)
